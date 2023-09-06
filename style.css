@@ -1,0 +1,154 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;500&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --bgColor: #212529;
+    --textcolor:white;
+    --secondarycolor:black;
+    --thirdcolor:#C9F31D;
+}
+
+body{
+    height: 100vh;
+    cursor: none;
+}
+
+/* cursor */
+
+.cursor-dot{
+    width: 5px;
+    height: 5px;
+    background: var(--thirdcolor);
+}
+
+
+.cursor-outline{
+    width: 30px;
+    height: 30px;
+    border: 2px solid var(--thirdcolor);
+}
+
+
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.cursor {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: 1px solid var(--thirdcolor);
+    transition: all 200ms ease-out;
+    position: fixed;
+    pointer-events: none;
+    left: 0;
+    top: 0;
+    transform: translate(calc(-50% + 15px), -50%);
+}
+  
+.cursor2 {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: var(--thirdcolor);
+    position: fixed;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: width .3s, height .3s, opacity .3s;
+}
+  
+
+
+.container{
+    background: var(--secondarycolor);
+    font-family: 'Kanit', sans-serif;
+    color: white;
+}
+
+
+.navbar{
+    position: fixed;
+}
+
+
+.navbar ul li{
+    width: 90px;
+    height: 240px;
+    writing-mode:vertical-rl;
+    background: var(--secondarycolor);
+    border-right: 0.1px solid gray;
+    font-size: 18px;
+    font-weight: 200;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:space-around;
+}
+
+.main-content{
+    margin-left: 150px;
+    overflow-x: hidden;
+}
+
+
+/* page-1 */
+
+
+.page-1{
+    background-image: url('bg-main.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+
+.page-1 div{
+    height: 100vh;
+    width: 100vw;
+    background: #000000c4;
+}
+
+
+.page-1 div h2{
+    padding-top: 40px;
+    padding-bottom: 20px;
+    font-size: 22px;
+    width: 300px;
+    border-bottom: 1px solid var(--textcolor);
+    font-weight: 400;
+}
+
+
+.page-1 div h1{
+    padding-top: 40px;
+    padding-bottom: 20px;
+    font-size: 120px;
+}
+
+
+.page-1 h1 span{
+    border: 2px var(--textcolor) solid;
+    border-radius: 20px;
+    font-size: 30px;
+    font-weight:400;
+    padding: 0px 15px;
+}
+
+
+.page-1 h1 p{
+    width: 420px;
+    font-size: 18px;
+    font-weight: 400;
+    color: gray;
+}
+
+/* page-2 */
