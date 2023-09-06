@@ -8,7 +8,7 @@
 }
 
 :root{
-    --bgColor: #212529;
+    --bgColor: #121212;
     --textcolor:white;
     --secondarycolor:black;
     --thirdcolor:#C9F31D;
@@ -21,18 +21,7 @@ body{
 
 /* cursor */
 
-.cursor-dot{
-    width: 5px;
-    height: 5px;
-    background: var(--thirdcolor);
-}
 
-
-.cursor-outline{
-    width: 30px;
-    height: 30px;
-    border: 2px solid var(--thirdcolor);
-}
 
 
 
@@ -41,6 +30,7 @@ body{
 }
 
 .cursor {
+    z-index: 99;
     width: 50px;
     height: 50px;
     border-radius: 100%;
@@ -54,6 +44,7 @@ body{
 }
   
 .cursor2 {
+    z-index: 88;
     width: 10px;
     height: 10px;
     border-radius: 100%;
@@ -75,6 +66,7 @@ body{
 
 .navbar{
     position: fixed;
+    z-index: 33;
 }
 
 
@@ -93,7 +85,6 @@ body{
 }
 
 .main-content{
-    margin-left: 150px;
     overflow-x: hidden;
 }
 
@@ -102,6 +93,7 @@ body{
 
 
 .page-1{
+    margin-left: 150px;
     background-image: url('bg-main.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -152,3 +144,73 @@ body{
 }
 
 /* page-2 */
+
+
+.yellow-band{
+    /* color: var(--secondarycolor); */
+    background: var(--thirdcolor);
+    width: 100vw;
+    font-size: 25px;
+    height: 110px;
+}
+
+.yellow-band ol {
+    display: flex;
+    /* margin-left: 150px; */
+    padding: 10px;
+}
+
+
+.yellow-band ol li{
+    padding: 30px;
+    list-style: none;
+    color: var(--secondarycolor);
+}
+
+.page-2-content{
+    padding-left: 150px;
+    position: relative;
+    background: var(--bgColor);
+}
+
+.page-2-content h1{
+    font-size: 50px;
+    font-weight: 500;
+    padding: 100px;
+}
+
+.page-2-content-img{
+    float: right;
+    padding-right: 100px;
+}
+
+.page-2-content p{
+    padding-right: 90px;
+    color: gray;
+    font-size: 18px;
+    font-weight: 400;
+    float: right;
+}
+
+.page-2-content button{
+    color: gray;
+    font-size: 16px;
+    background: transparent;
+    border-radius: 50%;
+    padding: 50px;
+    width: 200px;
+    text-align: center;
+    height: 200px;
+    float: right;
+    margin-right: -300px;
+    margin-top: 300px;
+    border: 1px solid gray;
+}
+
+.page-2-content button:hover{
+    border: 1px solid var(--thirdcolor);
+    transition:  0.5s;
+    background: var(--thirdcolor);
+    color: var(--secondarycolor);
+}
+
