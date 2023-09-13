@@ -33,3 +33,33 @@ a.forEach(item => {
     cursor.classList.remove('hover');
   });
 })
+
+
+
+// imge change
+
+function enter1(){
+  let enter1=document.querySelector("#img-change").src="img-chnge1.jpg";
+   enter1=document.querySelector("#img-change").classList.toggle("hoveranimation")
+}
+
+
+function enter2(){
+  let ho =document.getElementById("img-change")
+  ho.src="imgchange2.png"
+  document.querySelector("#img-change").classList.toggle("hoveranimation")
+  
+}
+
+function enter3(){
+  document.querySelector("#img-change").src="ic3.png"
+  document.querySelector("#img-change").classList.toggle("hoveranimation")
+}
+
+function enter4(){
+  document.querySelector("#img-change").src="ic4.png"
+  document.querySelector("#img-change").classList.toggle("hoveranimation")
+}
+
+
+
