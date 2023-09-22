@@ -120,3 +120,24 @@ document.addEventListener("DOMContentLoaded", function() {
 })
 
 
+
+
+
+
+// menu
+
+
+function openmenu(){
+    document.getElementById('open-menu').style.visibility='visible'
+}
+
+
+function closemenu(){
+    document.getElementById('open-menu').style.visibility='hidden'
+  }
+  
+  
+  function openoptimenu(){
+  document.getElementById('open-menu').style.visibility='visible'
+
+}
